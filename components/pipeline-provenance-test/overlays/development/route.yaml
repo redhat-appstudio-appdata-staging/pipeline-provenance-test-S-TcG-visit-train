@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: pipeline-provenance-test
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: pipeline-provenance-test
+    app.kubernetes.io/part-of: pipeline-provenance-test
+  name: pipeline-provenance-testbwd5
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: pipeline-provenance-test
+    weight: null
+status: {}
