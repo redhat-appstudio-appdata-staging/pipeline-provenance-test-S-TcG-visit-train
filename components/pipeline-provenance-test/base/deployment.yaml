@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: pipeline-provenance-test
     spec:
       containers:
-      - image: python-image:latest
+      - image: quay.io/redhat-user-workloads-stage/brianwcook-tenant/pipeline-provenance-test/pipeline-provenance-test@sha256:b92bf490ccce95a26f60a02e4b513f2873791c6667684608666c9c978e678c3a
         name: my-python
         ports:
         - containerPort: 8081
